@@ -1,0 +1,26 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+} */
+
+ul {
+  list-style: none;
+}
+
+/* li {
+  list-style-type: none;
+} */
+
+.hero-container {
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=About.css.map */
