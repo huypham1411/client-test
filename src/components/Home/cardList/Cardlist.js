@@ -62,6 +62,7 @@ class Cardlist extends React.PureComponent {
   }
 
   async componentDidUpdate(prevProps, prevState) {
+    // console.log(`/products${this.props.route==='/'?`?page=${this.props.number}`:`${this.props.route}&page=${this.props.number}`}`)
     if (
       prevProps.filter !== this.props.filter ||
       prevProps.route !== this.props.route ||
@@ -120,6 +121,7 @@ class Cardlist extends React.PureComponent {
             img={item.img}
             price={Math.round(item.price * 100) / 100}
             productName={item.name}
+            oldPrice={item.oldPrice}
             id={item._id}
             handleClick={this.handleClick}
           />

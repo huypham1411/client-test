@@ -18,7 +18,7 @@ const Form =()=>{
     const loginFunciton=()=>{
         //e.preventDefault();
     
-    axios.post('login',{role, data : {email, password}})
+    axios.post('/login',{role, data : {email, password}})
         .then((data)=>{
         //console.log(data.data)
         localStorage.setItem('auth-token',data.headers['auth-token'])
@@ -73,15 +73,16 @@ const Form =()=>{
                     //     name: data.name,
                     //     id: data.id
                     // }
-                } else {
-                    Swal.fire({
-                        position: 'center',
-                        icon: 'error',
-                        title: res2.data.message,
-                        showConfirmButton: false,
-                        timer: 2000
-                      })
-                }
+                } 
+                // else {
+                //     Swal.fire({
+                //         position: 'center',
+                //         icon: 'error',
+                //         title: res2.data.message,
+                //         showConfirmButton: false,
+                //         timer: 2000
+                //       })
+                // }
             })
         })
         
